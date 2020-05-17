@@ -1,0 +1,52 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12" id="top-bar">
+            <img src="/assets/img/magic-png.png" alt="Magic Flame">
+            <h1>Spell Caster!</h1>
+        </div>
+
+        <div class="col-lg-6" class="task">
+            <div class="row">
+                
+                {{#each spells}}
+                    {{#unless this.cast}}
+                        <div class="col-lg-9">
+                        <li>
+                            {{this.id}}.{{this.name}}
+
+                            <button class="change-cast" data-id="{{id}}" data-isCast="{{cast}}">
+                                Cast
+                            </button>
+                        </li>
+
+                    {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+
+        <div class=" col-lg-2">
+            <ul>
+                {{#each spells}}
+                {{#if cast}}
+                    <li id="isCast">
+                    {{name}}
+                    </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        
+    </div>
+        <div class="col">
+            <form class="create-form">
+
+                <div class="form-group">
+                    <input type="text" id="spel" name="name">
+                </div>
+                <br>
+                <button type="submit" id="submit">Add Spell</button>
+                <p>Enter a Spell You Want to Cast!!</p>
+            </form>
+        </div>
+</div>

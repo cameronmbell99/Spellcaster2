@@ -1,0 +1,30 @@
+{
+  "name": "Spellcaster2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronmbell99/Spellcaster2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronmbell99/Spellcaster2/issues"
+  },
+  "homepage": "https://github.com/cameronmbell99/Spellcaster2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.0.2",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.9"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.6"
+  }
+}
