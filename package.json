@@ -25,6 +25,6 @@
     "sequelize": "^5.21.9"
   },
   "devDependencies": {
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.7"
   }
 }
